@@ -2,7 +2,8 @@ local _G = ShaguTweaks.GetGlobalEnv()
 local T = ShaguTweaks.T
 local HookAddonOrVariable = ShaguTweaks.HookAddonOrVariable
 local GetExpansion = ShaguTweaks.GetExpansion
-local AddBorder = ShaguTweaks.AddBorder
+-- FIXME
+-- local AddBorder = ShaguTweaks.AddBorder
 
 local module = ShaguTweaks:register({
   title = T["Darkened UI"],
@@ -145,9 +146,10 @@ local function DarkenFrame(frame, r, g, b, a)
     end
 
     -- add black borders around specified buttons
-    for pattern, inset in pairs(borders) do
-      if name and string.find(name, pattern) then AddBorder(frame, inset, module.color) end
-    end
+    -- FIXME
+    -- for pattern, inset in pairs(borders) do
+    --   if name and string.find(name, pattern) then AddBorder(frame, inset, module.color) end
+    -- end
 
     -- scan through all regions (textures)
     for id, region in pairs({frame:GetRegions()}) do
@@ -184,7 +186,8 @@ module.enable = function(self)
     elseif not original and _G[name] then
       -- tbc buff buttons don't have borders, so we
       -- need to manually add a dark one.
-      AddBorder(_G[name], 2, self.color)
+      -- FIXME
+      -- AddBorder(_G[name], 2, self.color)
     end
   end
 

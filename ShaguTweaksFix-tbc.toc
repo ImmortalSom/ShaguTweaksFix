@@ -60,7 +60,10 @@ mods\move-unitframes.lua
 mods\target-castbar.lua
 mods\target-debufftimer.lua
 mods\social-colors.lua
-mods\item-colors.lua
+
+#FIXME
+#mods\item-colors.lua
+
 mods\chat-links.lua
 mods\health-numbers.lua
 mods\health-color.lua
