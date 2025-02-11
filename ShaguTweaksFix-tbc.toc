@@ -1,5 +1,5 @@
 ## Interface: 20400
-## Title: |cffffcc00Shagu|cffffffffTweaks |cffff5555[BETA]
+## Title: |cffffcc00Shagu|cffffffffTweaks|cffffcc00Fix |cffff5555[BETA]
 ## Author: Shagu
 ## Notes: A collection of tweaks and enhancements to the Default UI
 ## Notes-ruRU: Коллекция настроек и улучшений для стандартного пользовательского интерфейса.
