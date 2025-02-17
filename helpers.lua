@@ -235,31 +235,31 @@ local border = {
   tile = true, tileSize = 8, edgeSize = 12,
   insets = { left = 0, right = 0, top = 0, bottom = 0 }
 }
--- FIXME
--- ShaguTweaks.AddBorder = function(frame, inset, color)
---   if not frame then return end
---   if frame.ShaguTweaks_border then return frame.ShaguTweaks_border end
 
---   local top, right, bottom, left
+ShaguTweaks.AddBorder = function(frame, inset, color)
+  if not frame then return end
+  if frame.ShaguTweaks_border then return frame.ShaguTweaks_border end
 
---   if type(inset) == "table" then
---     top, right, bottom, left = unpack((inset))
---     left, bottom = -left, -bottom
---   end
+  local top, right, bottom, left
 
---   if not frame.ShaguTweaks_border then
---     frame.ShaguTweaks_border = CreateFrame("Frame", nil, frame)
---     frame.ShaguTweaks_border:SetPoint("TOPLEFT", frame, "TOPLEFT", (left or -inset), (top or inset))
---     frame.ShaguTweaks_border:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", (right or inset), (bottom or -inset))
---     frame.ShaguTweaks_border:SetBackdrop(border)
+  if type(inset) == "table" then
+    top, right, bottom, left = unpack((inset))
+    left, bottom = -left, -bottom
+  end
 
---     if color then
---       frame.ShaguTweaks_border:SetBackdropBorderColor(color.r, color.g, color.b, 1)
---     end
---   end
+  if not frame.ShaguTweaks_border then
+    frame.ShaguTweaks_border = CreateFrame("Frame", nil, frame)
+    frame.ShaguTweaks_border:SetPoint("TOPLEFT", frame, "TOPLEFT", (left or -inset), (top or inset))
+    frame.ShaguTweaks_border:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", (right or inset), (bottom or -inset))
+    frame.ShaguTweaks_border:SetBackdrop(border)
 
---   return frame.ShaguTweaks_border
--- end
+    if color then
+      frame.ShaguTweaks_border:SetBackdropBorderColor(color.r, color.g, color.b, 1)
+    end
+  end
+
+  return frame.ShaguTweaks_border
+end
 
 ShaguTweaks.round = function(input, places)
   if not places then places = 0 end
