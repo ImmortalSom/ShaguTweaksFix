@@ -63,7 +63,8 @@ mods\target-debufftimer.lua
 mods\social-colors.lua
 
 #FIXME
-#mods\item-colors.lua
+
+mods\item-colors.lua
 
 mods\chat-links.lua
 mods\health-numbers.lua
