@@ -2,8 +2,6 @@ local _G = ShaguTweaks.GetGlobalEnv()
 local T = ShaguTweaks.T
 local hooksecurefunc = hooksecurefunc or ShaguTweaks.hooksecurefunc
 local GetExpansion = ShaguTweaks.GetExpansion
--- FIXME
--- local AddBorder = ShaguTweaks.AddBorder
 local TimeConvert = ShaguTweaks.TimeConvert
 
 local module = ShaguTweaks:register({
